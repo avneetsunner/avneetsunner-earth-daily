@@ -1,0 +1,27 @@
+{
+  "name": "avneetsunner-earth-daily",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:integration": "cross-env AWS_ACCESS_KEY_ID=<secret> AWS_SECRET_ACCESS_KEY=<secret> mocha -r ts-node/register test/integration/**/*.spec.ts --reporter json-stream --reporter-option output=./report/results.json --timeout 180000 "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.169.0",
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "aws-sdk": "^2.1215.0",
+    "axios": "^0.27.2",
+    "chai": "^4.3.6",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.17"
+  }
+}
